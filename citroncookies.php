@@ -6,6 +6,8 @@ Description: Encapsulation du code tarteaucitron.js
 Version: 1.2
 Author: Morgan De Clerck (tdptce)
 Author URI: mailto:morgan.declerck@solidaris.be
+GitHub Plugin URI: Solidaris/citroncookies
+Primary Branch: main
 */
 
 function citroncookies_load_tarteaucitron() {
