@@ -21,7 +21,7 @@ tarteaucitron.lang = {
 
     "info": "Защитить вашу конфиденциальность",
     "disclaimer": "Активирование сервисов третьих лиц позволяет использование их кукис и технолоний отслеживания необходимых для их функционирования",
-    "allow": "Позролить",
+    "allow": "Позволить",
     "deny": "Не позволить",
     "noCookie": "Этот сервис не использует кукис.",
     "useCookie": "Этот сервис может быть инсталирован",
@@ -32,14 +32,20 @@ tarteaucitron.lang = {
     "credit": "Кукис манаджер tarteaucitron.js",
 
     "toggleInfoBox": "Show/hide informations about cookie storage",
-    "title": "Cookies management panel",
-    "cookieDetail": "Cookie detail for",
-    "ourSite": "on our site",
-    "newWindow": "(new window)",
-    "allowAll": "Allow all cookies",
-    "denyAll": "Deny all cookies",
+    "title": "Панель управления cookies",
+    "cookieDetail": "Информация о файлах cookie для",
+    "ourSite": "на нашем сайте",
+    "modalWindow": "(модальное окно)",
+    "newWindow": "(новое окно)",
+    "allowAll": "Разрешить использование cookies",
+    "denyAll": "Запретить использование cookies",
+
+    "icon": "Cookies",
+    
     
     "fallback": "Деактивирован.",
+    "allowed": "разрешается",
+    "disallowed": "запрещено",
 
     "ads": {
         "title": "Рекламная сеть",
@@ -72,5 +78,8 @@ tarteaucitron.lang = {
     "other": {
         "title": "Другие",
         "details": "Службы для отображения веб-контента."
-    }
+    },
+    
+    "mandatoryTitle": "Mandatory cookies",
+    "mandatoryText": "This site uses cookies necessary for its proper functioning which cannot be deactivated."
 };

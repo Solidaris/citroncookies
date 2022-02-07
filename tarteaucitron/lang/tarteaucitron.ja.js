@@ -36,11 +36,16 @@ tarteaucitron.lang = {
     "title": "クッキー利用の管理について",
     "cookieDetail": "Cookie detail for",
     "ourSite": "on our site",
-    "newWindow": "(new window)",
+    "modalWindow": "(モーダルウィンドウ)",
+    "newWindow": "(新しい窓)",
     "allowAll": "すべてのクッキーを許可する",
     "denyAll": "すべてのクッキーを拒否する",
+
+    "icon": "Cookies",
     
     "fallback": "is disabled.",
+    "allowed": "許可",
+    "disallowed": "許可されていません",
 
     "ads": {
         "title": "Advertising network",
@@ -73,5 +78,8 @@ tarteaucitron.lang = {
     "other": {
         "title": "Other",
         "details": "Services to display web content."
-    }
+    },
+    
+    "mandatoryTitle": "Mandatory cookies",
+    "mandatoryText": "This site uses cookies necessary for its proper functioning which cannot be deactivated."
 };
