@@ -3,7 +3,7 @@
 Plugin Name: Citron Cookies
 Plugin URI: http://www.solidaris.be
 Description: Encapsulation du code tarteaucitron.js
-Version: 1.2
+Version: 1.3
 Author: Morgan De Clerck (tdptce)
 Author URI: mailto:morgan.declerck@solidaris.be
 GitHub Plugin URI: Solidaris/citroncookies
@@ -27,12 +27,13 @@ function citroncookies_init() {
 	var tarteaucitronForceLanguage = "fr";
       tarteaucitron.init({
         "privacyUrl": "<?php echo get_option('citron_cookies_op_privacyUrl') ?>", /* Privacy policy url */
+		"bodyPosition": "<?php echo get_option('citron_cookies_op_bodyPosition') ?>",
         "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
         "cookieName": "tartaucitron", /* Cookie name */
         "orientation": "<?php echo get_option('citron_cookies_op_orientation') ?>", /* Banner position (top - bottom) */
+		"groupServices": "<?php echo get_option('citron_cookies_op_groupServices') ?>", /* Group services by category */
         "showAlertSmall": <?php echo get_option('citron_cookies_op_showAlertSmall') ?>, /* Show the small banner on bottom right */
         "cookieslist": <?php echo get_option('citron_cookies_op_cookieslist') ?>, /* Show the cookie list */
-		"closePopup": false,
 		"showIcon": true,
         "adblocker": <?php echo get_option('citron_cookies_op_adblocker') ?>, /* Show a Warning if an adblocker is detected */
 		"DenyAllCta" : <?php echo get_option('citron_cookies_op_DenyAllCta') ?>,
@@ -40,7 +41,8 @@ function citroncookies_init() {
         "highPrivacy": <?php echo get_option('citron_cookies_op_highPrivacy') ?>, /* Disable auto consent */
         "handleBrowserDNTRequest": <?php echo get_option('citron_cookies_op_handleBrowserDNTRequest') ?>, /* If Do Not Track == 1, accept all */
         "removeCredit": <?php echo get_option('citron_cookies_op_removeCredit') ?>, /* Remove credit link */
-        "moreInfoLink": <?php echo get_option('citron_cookies_op_moreInfoLink') ?>, /* Show more info link */
+        "readmoreLink": <?php echo get_option('citron_cookies_op_moreInfoLink') ?>, /* Show more info link */
+		"mandatory": true /* Show a message about mandatory cookies */
       });
     </script><?php
 }    
@@ -95,10 +97,12 @@ class CitronCookies {
 
         /* user-configurable values */
         add_option('citron_cookies_services', '');
-		add_option('citron_cookies_filesURL', 'https://cdn.jsdelivr.net/gh/AmauriC/tarteaucitron.js@v1.3/tarteaucitron.min.js');
+		add_option('citron_cookies_filesURL', 'https://cdn.jsdelivr.net/gh/AmauriC/tarteaucitron.js@v1.9.5/tarteaucitron.min.js');
 		add_option('citron_cookies_filesOp', 'local');
 		add_option('citron_cookies_op_privacyUrl', get_site_url());
+		add_option('citron_cookies_op_bodyPosition', 'bottom');
         add_option('citron_cookies_op_orientation', 'bottom');
+		add_option('citron_cookies_op_groupServices', 'false');
         add_option('citron_cookies_op_showAlertSmall', 'true');
 		add_option('citron_cookies_op_cookieslist', 'true');
         add_option('citron_cookies_op_adblocker', 'false');

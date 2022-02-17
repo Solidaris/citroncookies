@@ -32,14 +32,19 @@ tarteaucitron.lang = {
     "credit": "Cookie manager mogelijk gemaakt door tarteaucitron.js",
     
     "fallback": "is uitgeschakeld.",
+    "allowed": "toegestaan",
+    "disallowed": "niet toegestaan",
 
     "toggleInfoBox": "Toon/verberg informatie over cookie opslag",
     "title": "Cookies beheer paneel",
     "cookieDetail": "Cookie detail voor",
     "ourSite": "op onze site",
+    "modalWindow": "(modaal venster)",
     "newWindow": "(nieuw venster)",
     "allowAll": "Sta alle cookies toe",
     "denyAll": "Weiger alle cookies",
+
+    "icon": "Cookies",
 
     "ads": {
         "title": "Advertentienetwerk",
@@ -72,5 +77,8 @@ tarteaucitron.lang = {
     "other": {
         "title": "Overig",
         "details": "Diensten om webinhoud weer te geven."
-    }
+    },
+    
+    "mandatoryTitle": "Verplichte cookies",
+    "mandatoryText": "Deze site maakt gebruik van cookies die nodig zijn voor de goede werking ervan en die niet kunnen worden gedeactiveerd."
 };
