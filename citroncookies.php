@@ -3,7 +3,7 @@
 Plugin Name: Citron Cookies
 Plugin URI: http://www.solidaris.be
 Description: Encapsulation du code tarteaucitron.js
-Version: 1.2
+Version: 1.3
 Author: Morgan De Clerck (tdptce)
 Author URI: mailto:morgan.declerck@solidaris.be
 GitHub Plugin URI: Solidaris/citroncookies
