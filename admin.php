@@ -42,6 +42,23 @@ if (!is_admin()) {
 			<td>
 				<p><label><input type="radio" name="citron_cookies_op_orientation" value="top" <?php checked("top", get_option('citron_cookies_op_orientation')) ?>> <?php _e('Top', 'citron-cookies') ?></label></p>
 				<p><label><input type="radio" name="citron_cookies_op_orientation" value="bottom" <?php checked("bottom", get_option('citron_cookies_op_orientation')) ?>> <?php _e('Bottom', 'citron-cookies') ?></label></p>
+				<p><label><input type="radio" name="citron_cookies_op_orientation" value="middle" <?php checked("middle", get_option('citron_cookies_op_orientation')) ?>> <?php _e('Middle', 'citron-cookies') ?></label></p>
+				<p><label><input type="radio" name="citron_cookies_op_orientation" value="popup" <?php checked("popup", get_option('citron_cookies_op_orientation')) ?>> <?php _e('Popup', 'citron-cookies') ?></label></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<th scope="row"><?php _e('Group Services','citron-cookies'); ?> : </span></th>
+			<td>
+				<p><label><input type="radio" name="citron_cookies_op_groupServices" value="true" <?php checked("true", get_option('citron_cookies_op_groupServices')) ?>> <?php _e('Yes', 'citron-cookies') ?></label></p>
+				<p><label><input type="radio" name="citron_cookies_op_groupServices" value="false" <?php checked("false", get_option('citron_cookies_op_groupServices')) ?>> <?php _e('No', 'citron-cookies') ?></label></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<th scope="row"><?php _e('Service Default State','citron-cookies'); ?> : </span></th>
+			<td>
+				<p><label><input type="radio" name="citron_cookies_op_serviceDefaultState" value="true" <?php checked("true", get_option('citron_cookies_op_serviceDefaultState')) ?>> <?php _e('True', 'citron-cookies') ?></label></p>
+				<p><label><input type="radio" name="citron_cookies_op_serviceDefaultState" value="wait" <?php checked("wait", get_option('citron_cookies_op_serviceDefaultState')) ?>> <?php _e('Wait', 'citron-cookies') ?></label></p>
+				<p><label><input type="radio" name="citron_cookies_op_serviceDefaultState" value="false" <?php checked("false", get_option('citron_cookies_op_serviceDefaultState')) ?>> <?php _e('False', 'citron-cookies') ?></label></p>
 			</td>
 		</tr>
 		<tr valign="top">

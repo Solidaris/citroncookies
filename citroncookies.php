@@ -3,7 +3,7 @@
 Plugin Name: Citron Cookies
 Plugin URI: http://www.solidaris.be
 Description: Encapsulation du code tarteaucitron.js
-Version: 1.3
+Version: 1.4
 Author: Morgan De Clerck (tdptce)
 Author URI: mailto:morgan.declerck@solidaris.be
 GitHub Plugin URI: Solidaris/citroncookies
@@ -32,6 +32,7 @@ function citroncookies_init() {
         "cookieName": "tartaucitron", /* Cookie name */
         "orientation": "<?php echo get_option('citron_cookies_op_orientation') ?>", /* Banner position (top - bottom) */
 		"groupServices": "<?php echo get_option('citron_cookies_op_groupServices') ?>", /* Group services by category */
+		"serviceDefaultState": "<?php echo get_option('citron_cookies_op_serviceDefaultState') ?>", /* Default state (true - wait - false) */
         "showAlertSmall": <?php echo get_option('citron_cookies_op_showAlertSmall') ?>, /* Show the small banner on bottom right */
         "cookieslist": <?php echo get_option('citron_cookies_op_cookieslist') ?>, /* Show the cookie list */
 		"showIcon": true,
@@ -102,6 +103,7 @@ class CitronCookies {
 		add_option('citron_cookies_op_privacyUrl', get_site_url());
 		add_option('citron_cookies_op_bodyPosition', 'bottom');
         add_option('citron_cookies_op_orientation', 'bottom');
+		add_option('citron_cookies_op_serviceDefaultState', 'wait');
 		add_option('citron_cookies_op_groupServices', 'false');
         add_option('citron_cookies_op_showAlertSmall', 'true');
 		add_option('citron_cookies_op_cookieslist', 'true');
@@ -119,6 +121,8 @@ class CitronCookies {
         register_setting( 'citron_cookies', 'citron_cookies_services', 'CitronCookies::filter_string' );
 		register_setting( 'citron_cookies', 'citron_cookies_op_privacyUrl', 'CitronCookies::filter_string' );
         register_setting( 'citron_cookies', 'citron_cookies_op_orientation', '' );
+		register_setting( 'citron_cookies', 'citron_cookies_op_serviceDefaultState', '' );
+		register_setting( 'citron_cookies', 'citron_cookies_op_groupServices', '' );
         register_setting( 'citron_cookies', 'citron_cookies_op_showAlertSmall', '' );
         register_setting( 'citron_cookies', 'citron_cookies_op_cookieslist', '' );
         register_setting( 'citron_cookies', 'citron_cookies_op_adblocker', '' );
